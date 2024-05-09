@@ -1,0 +1,80 @@
+.Programs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.programs-header {
+    display: flex;
+    gap: 2rem; /* Reduce the gap for smaller screens */
+    font-weight: bold;
+    font-size: 2rem; /* Decrease font size */
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.program-catagories {
+    display: flex;
+    flex-wrap: wrap; /* Allow categories to wrap on smaller screens */
+    gap: 1rem;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    color: white;
+    padding: 1.5rem; /* Reduce padding */
+    gap: 1rem;
+    justify-content: space-between;
+    flex: 1; /* Take full width of container */
+}
+
+.category > :nth-child(1) {
+    width: 1.5rem; /* Decrease icon size */
+    height: 1.5rem; /* Decrease icon size */
+    fill: white;
+}
+
+.category > :nth-child(2) {
+    font-size: 0.9rem; /* Decrease font size */
+    font-weight: bold;
+}
+
+.category > :nth-child(3) {
+    font-size: 0.8rem; /* Decrease font size */
+    line-height: 20px; /* Decrease line height */
+}
+
+.join-now {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Reduce gap */
+}
+
+.join-now > img {
+    width: 0.8rem; /* Decrease image size */
+}
+
+.category:hover {
+    background: var(--planCard);
+}
+
+@media screen and (max-width: 768px) {
+    .programs-header {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: x-large;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .program-catagories {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+}
